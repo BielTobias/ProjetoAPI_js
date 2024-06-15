@@ -138,7 +138,7 @@ function update() {
 		.then(res=>res.json())
 		.then(json=>createTodo(json))
 	}
-	if(id >= 20 || id == 0 || id == ""){
+	if(id > 20 || id == 0 || id == ""){
 		alert("Choose an existing product to update (1-20)")
 	}
 }
